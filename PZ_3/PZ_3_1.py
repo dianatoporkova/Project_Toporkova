@@ -9,7 +9,7 @@ try:
         num1 = num % 10
         num2 = (num // 10) % 10
         num3 = (num // 100) % 10
-        if num3 >= num2 or num2 >= num1:
+        if num3 >= num2 or num2 >= num1 or num3 >= num1:
             print ('Утверждение неверное.')
         else:
             print ('Цифры данного числа образуют возрастающую последовательность.')
