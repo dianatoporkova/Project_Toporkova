@@ -2,7 +2,7 @@
 
 import random
 
-num = str (random.randint(1, 50))
+num = str (random.randint(1, 200))
 print (num)
 s = 0
 for i in num:
