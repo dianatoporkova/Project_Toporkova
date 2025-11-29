@@ -2,9 +2,9 @@
 
 import random
 
-num = random.randint(1, 50)
+num = str (random.randint(1, 50))
 print (num)
 s = 0
-for i in str (num):
+for i in num:
     s = s + int (i)
 print (s)
