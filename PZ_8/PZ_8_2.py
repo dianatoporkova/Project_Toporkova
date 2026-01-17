@@ -6,4 +6,6 @@ n = {'name': 'Alice', 'age': 35, 'city': 'New York'}
 print (n)
 if 'фрукт' not in n:
     n['фрукт'] = 'яблоко'
+else:
+    n['фрукт'] = 'яблоко'
 print (n)
