@@ -36,10 +36,11 @@ else:
 d = []
 m = 0
 for x in k:
+    if x > 0:
+        m += x
+for x in k:
     if x % 2 != 0:
         d.append(x)
-    elif x > 0:
-        m += x
 f2 = open('result.txt', 'w')
 
 f2.write('Содержимое первого файла: ')
