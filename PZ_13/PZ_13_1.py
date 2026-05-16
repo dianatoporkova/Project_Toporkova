@@ -6,9 +6,9 @@ import re
 with open('ip_address.txt', 'r', encoding='utf-8') as file:
     text = file.read()
 
-m = re.search(r'Частоупотребимые маски\n(.*?)(?=\n\n|\Z)', text, re.DOTALL)
+m = re.search(r'Частоупотребимые маски\n.*?(?=\n\n|\Z)', text, re.DOTALL)
 
-c = m.group(1)
+c = m.group(0)
 s = re.findall(r'\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}', c)
 zero = [i for i in s if i.endswith('.0')]
 other = [i for i in s if not i.endswith('.0')]
