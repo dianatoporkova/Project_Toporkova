@@ -1,3 +1,5 @@
+#Даны два числа. Вывести большее из них.
+
 from tkinter import *
 
 def num():
