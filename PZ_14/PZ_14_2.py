@@ -1,5 +1,4 @@
 from tkinter import *
-from tkinter import ttk
 
 def num():
     a = int(num1.get())
